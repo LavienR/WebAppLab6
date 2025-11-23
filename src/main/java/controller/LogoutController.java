@@ -53,7 +53,6 @@ public class LogoutController extends HttpServlet {
         
         // Redirect to login page with message
         response.sendRedirect("login?message=You have been logged out successfully");
-        response.sendRedirect("login");
 
     }
     
