@@ -1,10 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%> <%@ taglib uri="http://java.sun.com/jsp/jstl/core"
-prefix="c" %> <% // Get theme from cookie, default to 'light' String
-currentTheme = "light"; Cookie[] cookies = request.getCookies(); if (cookies !=
-null) { for (Cookie cookie : cookies) { if
-("user_theme".equals(cookie.getName())) { currentTheme = cookie.getValue();
-break; } } } %>
+pageEncoding="UTF-8"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core"
+prefix="c" %> 
+<%
+    // Get theme from cookie, default to 'light'
+    String currentTheme = "light";
+
+    Cookie[] cookies = request.getCookies();
+    if (cookies != null) {
+        for (Cookie cookie : cookies) {
+            if ("user_theme".equals(cookie.getName())) {
+                currentTheme = cookie.getValue();
+                break;
+            }
+        }
+    }
+%>
 <!DOCTYPE html>
 <html data-bs-theme="<%= currentTheme %>">
   <head>
