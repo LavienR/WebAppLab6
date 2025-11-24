@@ -151,7 +151,7 @@
             <a href="student?action=list">Clear Filter</a>
         </c:if>
     </form>
-</div>
+    </div>
 
     <table>
         <thead>
@@ -192,12 +192,12 @@
                     <td>${student.fullName}</td>
                     <td>${student.email != null ? student.email : 'N/A'}</td>
                     <td>${student.major != null ? student.major : 'N/A'}</td>
-                    <td>
-                        <a href="student?action=edit&id=${student.id}" class="action-link">✏️ Edit</a>   
-                        <a href="student?action=delete&id=${student.id}" 
-                           class="action-link delete-link"
-                           onclick="return confirm('Are you sure?')">🗑️ Delete</a>
-                    </td>
+                   <c:if test="${sessionScope.role eq 'admin'}">
+    <td>
+        <a href="student?action=edit&id=${student.id}">Edit</a>
+        <a href="student?action=delete&id=${student.id}">Delete</a>
+    </td>
+</c:if>
                 </tr>
             </c:forEach>
             
@@ -210,6 +210,6 @@
             </c:if>
         </tbody>
     </table>
-
+</div>
 </body>
 </html>
