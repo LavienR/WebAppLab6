@@ -46,7 +46,8 @@ SECURITY MEASURES:
 - Input validation
 - XSS prevention (JSTL escaping)
 
-KNOWN ISSUES:
+KNOWN ISSUES: Having trouble with github so I had to delete the whole file and upload again. 
+Did not include bonus assignments because they are too tricky for me
 
 TIME SPENT: 6 hours
 
