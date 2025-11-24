@@ -1,0 +1,57 @@
+STUDENT INFORMATION:
+Name: Nguyễn Minh Quân
+Student ID: ITITIU23035
+Class: IT093IU
+
+COMPLETED EXERCISES:
+[x] Exercise 1: Database & User Model
+[x] Exercise 2: User Model & DAO
+[x] Exercise 3: Login/Logout Controllers
+[x] Exercise 4: Views & Dashboard
+[x] Exercise 5: Authentication Filter
+[x] Exercise 6: Admin Authorization Filter
+[x] Exercise 7: Role-Based UI
+[X] Exercise 8: Change Password
+[X]BONUS 1: Cookie Utility Class
+[X]BONUS 2: Remember Me Functionality
+[X]BONUS 3: User Theme Preference
+AUTHENTICATION COMPONENTS:
+- Models: User.java
+- DAOs: UserDAO.java
+- Controllers: LoginController.java, LogoutController.java, DashboardController.java
+- Filters: AuthFilter.java, AdminFilter.java
+- Views: login.jsp, dashboard.jsp, updated student-list.jsp
+
+TEST CREDENTIALS:
+Admin:
+- Username: admin
+- Password: password123
+
+Regular User:
+- Username: john
+- Password: password123
+
+FEATURES IMPLEMENTED:
+- User authentication with BCrypt
+- Session management
+- Login/Logout functionality
+- Dashboard with statistics
+- Authentication filter for protected pages
+- Admin authorization filter
+- Role-based UI elements
+- Password security
+
+SECURITY MEASURES:
+- BCrypt password hashing
+- Session regeneration after login
+- Session timeout (30 minutes)
+- SQL injection prevention (PreparedStatement)
+- Input validation
+- XSS prevention (JSTL escaping)
+
+KNOWN ISSUES:
+
+TIME SPENT: 6 hours
+
+TESTING NOTES:
+[Describe how you tested authentication, filters, and authorization]
