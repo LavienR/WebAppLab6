@@ -37,7 +37,7 @@ public class LoginController extends HttpServlet {
         }
         
         // Show login page
-        request.getRequestDispatcher("/views/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/login.jsp").forward(request, response);
     }
     
     /**
@@ -56,7 +56,7 @@ public class LoginController extends HttpServlet {
             password == null || password.trim().isEmpty()) {
             
             request.setAttribute("error", "Username and password are required");
-            request.getRequestDispatcher("/views/login.jsp").forward(request, response);
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
             return;
         }
         
@@ -97,7 +97,8 @@ public class LoginController extends HttpServlet {
             // Authentication failed
             request.setAttribute("error", "Invalid username or password");
             request.setAttribute("username", username); // Keep username in form
-            request.getRequestDispatcher("/views/login.jsp").forward(request, response);
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
     }
+
 }
