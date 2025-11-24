@@ -12,9 +12,6 @@ COMPLETED EXERCISES:
 [x] Exercise 6: Admin Authorization Filter
 [x] Exercise 7: Role-Based UI
 [X] Exercise 8: Change Password
-[X]BONUS 1: Cookie Utility Class
-[X]BONUS 2: Remember Me Functionality
-[X]BONUS 3: User Theme Preference
 AUTHENTICATION COMPONENTS:
 - Models: User.java
 - DAOs: UserDAO.java
